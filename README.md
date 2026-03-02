@@ -178,8 +178,8 @@ eas build --platform android --profile preview
 
 ## 🇵🇪 Contexto de Mercado
 
-- **+80%** penetración Android en Perú
-- **98%** penetración WhatsApp en smartphones peruanos
+- **+80%** inclusion con Android en Perú
+- **98%** inclusion con WhatsApp en smartphones peruanos
 - **Android 8.0+** como versión mínima (>90% dispositivos activos)
 - **Competencia directa local:** prácticamente ninguna
 
