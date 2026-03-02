@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "SÁLVAME",
+    "slug": "salvame",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.salvame.mobile",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SÁLVAME necesita tu ubicación para enviarla a tus contactos de emergencia cuando activas una alerta SOS.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "SÁLVAME necesita tu ubicación en segundo plano para continuar compartiendo tu posición durante una alerta de emergencia activa.",
+        "NSLocationAlwaysUsageDescription": "SÁLVAME necesita tu ubicación en segundo plano durante alertas de emergencia activas.",
+        "UIBackgroundModes": ["location", "fetch", "remote-notification"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0A"
+      },
+      "package": "app.salvame.mobile",
+      "versionCode": 1,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "SEND_SMS",
+        "READ_PHONE_STATE",
+        "WAKE_LOCK"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "targetSdkVersion": 34,
+      "minSdkVersion": 26
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "SÁLVAME necesita tu ubicación para enviarla a tus contactos de emergencia durante una alerta SOS activa.",
+          "locationAlwaysPermission": "SÁLVAME necesita tu ubicación en segundo plano durante alertas de emergencia activas.",
+          "locationWhenInUsePermission": "SÁLVAME necesita tu ubicación para enviarla a tus contactos de emergencia.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#E8281A",
+          "sounds": []
+        }
+      ],
+      "expo-secure-store",
+      "expo-task-manager"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "YOUR_EAS_PROJECT_ID"
+      }
+    },
+    "owner": "salvame-app"
+  }
+}
