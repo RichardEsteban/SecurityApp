@@ -133,7 +133,7 @@ eas build --platform android --profile preview
 
 ---
 
-## 🎯 Funcionalidades MVP (Fase 1)
+## 🎯 Funcionalidades MVP 
 
 - [x] **Botón SOS de doble-click** (800ms window)
 - [x] **Cuenta regresiva de 8 segundos** con cancelación
@@ -163,26 +163,4 @@ eas build --platform android --profile preview
 - Cumplimiento con **Ley 29733** (Perú)
 - Datos nunca vendidos ni compartidos con terceros
 
----
 
-## 📊 Modelo de Negocio
-
-| Segmento | Precio | Target |
-|----------|--------|--------|
-| B2C Free | Gratis | Validación inicial |
-| B2C Premium | S/. 9.90/mes | 8-12% conversión mes 6 |
-| B2B Corporativo | S/. 30-80/empleado/mes | Personal de campo |
-| B2G Municipal | SaaS por distrito | Serenazgo |
-
----
-
-## 🇵🇪 Contexto de Mercado
-
-- **+80%** inclusion con Android en Perú
-- **98%** inclusion con WhatsApp en smartphones peruanos
-- **Android 8.0+** como versión mínima (>90% dispositivos activos)
-- **Competencia directa local:** prácticamente ninguna
-
----
-
-*Construido con ❤️ para el mercado peruano. SÁLVAME — Porque tu seguridad importa.*
